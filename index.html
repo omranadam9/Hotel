@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotel App — Privacy Policy / سياسة الخصوصية</title>
+<style>
+  body{font-family:-apple-system,Segoe UI,Tahoma,Arial,sans-serif;max-width:760px;margin:0 auto;padding:24px 18px;line-height:1.7;color:#1c1c1e;background:#fff}
+  h1{color:#0f5a6e;margin-bottom:4px} h2{color:#0f5a6e;margin-top:26px;font-size:1.1rem}
+  .ar{direction:rtl;text-align:right} .en{direction:ltr;text-align:left}
+  hr{border:0;border-top:2px solid #0f5a6e33;margin:40px 0} small{color:#666}
+  .switch{display:flex;gap:8px;justify-content:center;position:sticky;top:0;background:inherit;padding:10px 0;z-index:5}
+  .switch button{font:inherit;font-weight:600;padding:8px 22px;border-radius:999px;border:2px solid #0f5a6e;background:transparent;color:#0f5a6e;cursor:pointer}
+  .switch button.on{background:#0f5a6e;color:#fff}
+  section{display:none} body[data-lang="en"] section.en{display:block} body[data-lang="ar"] section.ar{display:block}
+  hr{display:none}
+  @media (prefers-color-scheme:dark){.switch button{border-color:#6ec6dc;color:#6ec6dc}.switch button.on{background:#6ec6dc;color:#111}}
+  @media (prefers-color-scheme:dark){body{background:#111;color:#eee}h1,h2{color:#6ec6dc}}
+</style>
+</head>
+<body data-lang="en">
+<div class="switch">
+  <button id="b-en" class="on" onclick="setLang('en')">English</button>
+  <button id="b-ar" onclick="setLang('ar')">العربية</button>
+</div>
+<script>
+function setLang(l){
+  document.body.dataset.lang=l;
+  document.documentElement.lang=l;
+  document.getElementById('b-en').classList.toggle('on',l==='en');
+  document.getElementById('b-ar').classList.toggle('on',l==='ar');
+  try{localStorage.setItem('lang',l)}catch(e){}
+}
+(function(){
+  var l=null; try{l=localStorage.getItem('lang')}catch(e){}
+  if(!l) l=(navigator.language||'en').toLowerCase().indexOf('ar')===0?'ar':'en';
+  setLang(l);
+})();
+</script>
+
+<section class="en" lang="en">
+<h1>Hotel App — Privacy Policy</h1>
+<small>Last updated: November 9, 2026</small>
+
+<h2>1. Summary</h2>
+<p>Hotel App works entirely on your device. We do not run servers for the app, we do not collect your data, and we do not use analytics, advertising or tracking.</p>
+
+<h2>2. Data stored in the app</h2>
+<p>The information you enter — rooms, guests (names, phone numbers, ID/notes), bookings, orders, payments, menu photos, staff accounts and activity logs — is stored only in a local SQLite database on your device. We never receive a copy.</p>
+
+<h2>3. Passwords</h2>
+<p>User passwords are stored as salted hashes (SHA-256) and are never kept in plain text.</p>
+
+<h2>4. Photos and files</h2>
+<p>The app accesses your photo library only when you choose a menu-item photo, and only the photo you pick. Backups, CSV files and PDF invoices are created only when you ask, and are shared only to the destination you choose (Files, Mail, AirDrop, etc.).</p>
+
+<h2>5. Sharing with third parties</h2>
+<p>We do not sell, share or transfer your data. If you export a file or back it up to iCloud or any other service, that is under your control and that service's own policy applies.</p>
+<h2>5.1 Optional device sync (iCloud)</h2>
+<p>If you turn on "Sync between devices", your hotel data is stored in an iCloud (CloudKit) database in the iCloud account of the person who created it, and is shared through a link only with the staff devices that join it. Apple processes it under Apple's terms. The developer has no access to this database and receives no copy. You can stop syncing at any time from Management › Sync between devices; the data on the device stays, and the owner can delete the cloud copy from iCloud settings.</p>
+
+<h2>6. Deleting your data</h2>
+<p>You can erase data from Management › Database, or delete the app, which removes all local data from your device.</p>
+
+<h2>7. Guest data responsibility</h2>
+<p>The hotel using the app is responsible for handling its guests' personal data in line with the laws that apply to it.</p>
+
+<h2>8. Children</h2>
+<p>The app is a business tool and is not directed at children.</p>
+
+<h2>9. Changes</h2>
+<p>If this policy changes, the updated version and date will be published here.</p>
+
+<h2>10. Contact</h2>
+<p>Questions: <a href="mailto:omran_adam@yahoo.com">omran_adam@yahoo.com</a></p>
+</section>
+
+<hr>
+
+<section class="ar" lang="ar" dir="rtl">
+<h1>Hotel App — سياسة الخصوصية</h1>
+<small>آخر تحديث: ٩ نوفمبر ٢٠٢٦</small>
+
+<h2>١. ملخص</h2>
+<p>يعمل Hotel App بالكامل على جهازك. لا نشغّل خوادم للتطبيق، ولا نجمع بياناتك، ولا نستخدم أدوات تحليل أو إعلانات أو تتبّع.</p>
+
+<h2>٢. البيانات المخزّنة في التطبيق</h2>
+<p>كل ما تُدخله — الغرف، النزلاء (الأسماء وأرقام الهاتف والهوية/الملاحظات)، الحجوزات، الطلبات، الدفعات، صور الأصناف، حسابات الموظفين وسجل النشاط — يُحفظ فقط في قاعدة بيانات SQLite محلية على جهازك. لا نستلم أي نسخة منها.</p>
+
+<h2>٣. كلمات المرور</h2>
+<p>تُخزَّن كلمات المرور في صورة مشفّرة (SHA-256 مع قيمة عشوائية) ولا تُحفظ كنص صريح.</p>
+
+<h2>٤. الصور والملفات</h2>
+<p>يصل التطبيق إلى مكتبة الصور فقط عندما تختار صورة لصنف، وللصورة التي تختارها فقط. النسخ الاحتياطية وملفات CSV وفواتير PDF تُنشأ فقط عند طلبك، وتُشارَك فقط إلى الوجهة التي تحددها (الملفات، البريد، AirDrop…).</p>
+
+<h2>٥. المشاركة مع أطراف أخرى</h2>
+<p>لا نبيع بياناتك ولا نشاركها ولا ننقلها. إذا صدّرت ملفاً أو حفظت نسخة احتياطية في iCloud أو أي خدمة أخرى فهذا بقرارك وتسري سياسة تلك الخدمة.</p>
+<h2>٥.١ المزامنة بين الأجهزة (اختيارية)</h2>
+<p>إذا فعّلت «المزامنة بين الأجهزة» تُحفظ بيانات الفندق في قاعدة iCloud (CloudKit) ضمن حساب iCloud لمن أنشأها، وتُشارَك برابط مع أجهزة الموظفين الذين ينضمون إليها فقط، وتعالجها Apple وفق شروطها. لا يملك المطوّر أي وصول إلى هذه القاعدة ولا يستلم أي نسخة منها. يمكنك إيقاف المزامنة في أي وقت من الإدارة ‹ المزامنة بين الأجهزة؛ تبقى البيانات على الجهاز، ويستطيع صاحب القاعدة حذف النسخة السحابية من إعدادات iCloud.</p>
+
+<h2>٦. حذف البيانات</h2>
+<p>يمكنك مسح البيانات من الإدارة ‹ قاعدة البيانات، أو حذف التطبيق فتُزال كل البيانات المحلية من جهازك.</p>
+
+<h2>٧. مسؤولية بيانات النزلاء</h2>
+<p>الفندق المستخدم للتطبيق مسؤول عن التعامل مع بيانات نزلائه الشخصية وفق القوانين السارية عليه.</p>
+
+<h2>٨. الأطفال</h2>
+<p>التطبيق أداة عمل وليس موجهاً للأطفال.</p>
+
+<h2>٩. التعديلات</h2>
+<p>عند تغيير هذه السياسة سيُنشر الإصدار المحدّث وتاريخه هنا.</p>
+
+<h2>١٠. التواصل</h2>
+<p>للاستفسار: <a href="mailto:omran_adam@yahoo.com">omran_adam@yahoo.com</a></p>
+</section>
+
+</body>
+</html>
